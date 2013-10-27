@@ -17,17 +17,15 @@ The application needs to be before ``mezzanine.forms`` in ``INSTALLED_APPS``.
 
 I use it between the django and mezzanine ones.
 
-::
-    'django.contrib.staticfiles',
-    'captcha',      # \__ the new ones
-    'mezzacaptcha', # /
-    'mezzanine.boot',
+  'django.contrib.staticfiles',
+  'captcha',      # \__ the new ones
+  'mezzacaptcha', # /
+  'mezzanine.boot',
 
 You also need to configure ``urls.py`` in your Mezzanine app.
 
-::
-    ("^captcha/", include('captcha.urls')), # Slap it in before the catch-all
-    ("^", include("mezzanine.urls")),
+  ("^captcha/", include('captcha.urls')), # Slap it in before the catch-all
+  ("^", include("mezzanine.urls")),
 
 License
 -------
