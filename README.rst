@@ -1,6 +1,11 @@
 mezzanine-captcha
 =================
 
+Wat (not the one in Angkor)
+---------------------------
+
+Adds a Captcha field to Mezzanine's form builder.
+
 Caveat
 ------
 
@@ -12,6 +17,8 @@ A registry for custom fields in Mezzanine would be more worth-while!
 
 Installation
 ------------
+
+Running ``setup.py`` should install ``django-simplecaptcha``, which is required.
 
 The application needs to be before ``mezzanine.forms`` in ``INSTALLED_APPS``.
 
@@ -26,6 +33,18 @@ You also need to configure ``urls.py`` in your Mezzanine app::
 
   ("^captcha/", include('captcha.urls')), # Slap it in before the catch-all
   ("^", include("mezzanine.urls")),
+
+Run also migrations::
+
+  python manage.py migrate captcha
+
+Usage
+-----
+
+Now you can create captchas for your forms in admin!
+
+For info on captcha configuration please see
+https://django-simple-captcha.readthedocs.org/en/latest/index.html
 
 License
 -------
