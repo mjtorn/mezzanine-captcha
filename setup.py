@@ -3,7 +3,7 @@
 from setuptools import setup, find_packages
 
 NAME = 'mezzanine-captcha'
-VERSION = '0.0.3'
+VERSION = '0.0.4'
 
 DESCR = """\
 Captcha field for Mezzanine. A hack which can break your fields if you're not careful.
