@@ -38,10 +38,16 @@ Run also migrations::
 
   python manage.py migrate captcha
 
+
 Usage
 -----
 
 Now you can create captchas for your forms in admin!
+
+Include the following option on your settings.py in order to add a captcha
+on the blog comments form. 
+
+  COMMENT_FORM_CLASS = "mezzacaptcha.forms.CaptchaThreadedCommentForm"
 
 For info on captcha configuration please see
 https://django-simple-captcha.readthedocs.org/en/latest/index.html
