@@ -31,8 +31,8 @@ I use it between the django and mezzanine ones::
 
 You also need to configure ``urls.py`` in your Mezzanine app::
 
-  ("^captcha/", include('captcha.urls')), # Slap it in before the catch-all
-  ("^", include("mezzanine.urls")),
+  url("^captcha/", include('captcha.urls')),  # Slap it in before the catch-all
+  url("^", include("mezzanine.urls")),
 
 Run also migrations::
 
