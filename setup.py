@@ -12,7 +12,7 @@ Use with extreme care. Can screw up your field types if you have other apps like
 Do not use unless you know what you're doing.
 """
 
-AUTHOR = u'Markus Törnqvist'
+AUTHOR = 'Markus Törnqvist'
 AUTHOR_EMAIL = 'mjt@fadconsulting.com'
 
 URL = 'https://github.com/mjtorn/mezzanine-captcha'
